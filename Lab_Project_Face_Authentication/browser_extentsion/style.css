@@ -1,0 +1,15 @@
+body {
+    width: 300px;
+    font-family: Arial;
+    text-align: center;
+  }
+  
+  video {
+    width: 280px;
+    border-radius: 8px;
+  }
+  
+  #status {
+    margin-top: 10px;
+    font-weight: bold;
+  }
