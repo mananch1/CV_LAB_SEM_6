@@ -11,7 +11,14 @@
 
 <video id="video" autoplay playsinline></video>
 
+<div style="margin: 10px 0;">
+  <input type="password" id="password" placeholder="Enter secret password">
+  <button id="registerBtn">Register Face & Password</button>
+  <button id="accessBtn">Show Password</button>
+</div>
+
 <p id="status">Initializing camera...</p>
+<p id="secretDisplay" style="font-weight: bold; color: green;"></p>
 
 <script src="camera.js"></script>
 <script src="websocket.js"></script>
