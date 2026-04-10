@@ -3,9 +3,14 @@
     "name": "Face Authentication",
     "version": "1.0",
     "description": "Face verification extension",
+    "background" : {
+      "service_worker":"background.js"
+    },
     "permissions": [
       "activeTab",
-      "storage"
+      "storage",
+      "webNavigation",
+      "scripting"
     ],
     "host_permissions": [
       "http://localhost:8000/*",

@@ -334,7 +334,7 @@ async def websocket_endpoint(websocket: WebSocket):
                             test_emb = auth_model(face_tensor)
                             distance = (registered_anchor - test_emb).norm().item()
                         
-                        if distance < 1.0:
+                        if distance < 0.8:
                             auth_result = True
                             send_password = registered_password
                             display_msg = "Authentication Successful!"

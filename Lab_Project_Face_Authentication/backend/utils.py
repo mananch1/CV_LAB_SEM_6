@@ -85,8 +85,9 @@ def detect_largest_face(frame):
 
             (x1,y1,x2,y2)=box.astype("int")
 
-            pad=int(0.15*(x2-x1))
-
+            #pad=int(0.15*(x2-x1))
+            pad = 0
+            
             x1=max(0,x1-pad)
             y1=max(0,y1-pad)
             x2=min(w,x2+pad)
